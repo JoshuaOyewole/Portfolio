@@ -1,0 +1,13 @@
+
+
+@keyframes show{
+    0%{
+        right: -100%;
+        opacity: .8; 
+    }
+
+    100%{
+        right: 0;
+        opacity: 1; 
+    }
+}

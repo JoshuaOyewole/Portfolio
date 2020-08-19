@@ -1,0 +1,55 @@
+.card{
+    background-color: #f7f7f7;
+    box-shadow: 1px .3rem 1.5rem #4d4647;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    margin-bottom: 5rem;
+    align-items: center;
+
+    &__img-container{
+        background-color: rgb(255, 255, 255);
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
+        transition: transform 1s ease-out;
+        border-radius: 1rem;
+        border: 1px solid #2c1d4d;
+
+        &:hover{
+            transform: scale(1.1, 1.2);
+            
+        }
+    }
+    &__content{
+        border-top: 1px solid #e1e3ec;
+    
+    &__summary{
+        padding-bottom: 2rem;
+    }
+}
+
+@include responsive(tab-650){
+    &__img{
+        &:hover{
+            transform: scale(1, 1);
+            
+        }
+    }
+    grid-template-columns: 1fr;
+}
+}
+
+.tech-stack{
+    margin-top: 2rem;
+
+        li{
+            display: inline;
+        }
+
+}

@@ -1,0 +1,82 @@
+.grid-1-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 3rem;
+
+    @include responsive(tab-700){
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-3-1-1-1{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 5rem 3rem;
+
+    @include responsive(tab-900){
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem 4rem;
+    }
+
+    @include responsive(phone-548){
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-3-methodology{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 5rem 3rem;
+
+     @include responsive(tab-768){
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem 4rem;
+    } 
+
+    @include responsive(phone-460){
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-4-1-1{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2rem;
+
+    @include responsive(pc-180){
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 4rem;
+    }
+    @include responsive(tab-650){
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include responsive(phone-310){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-2-1-1{
+    display: flex;
+    grid-gap: 2rem;
+    flex-flow: row-reverse;
+    place-items: center; 
+
+    @include responsive(tab-900){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include responsive(tab-700){
+        grid-template-columns: 1fr;
+       
+        .col-1-of-2-left{
+            order: 2;
+        }
+    }
+}
+
+.grid-1-of-3{
+    & i{
+        color:$blue;
+        padding-right: 1.5rem;
+    }
+}

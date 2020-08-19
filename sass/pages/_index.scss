@@ -1,0 +1,167 @@
+.past-clients{
+    padding: 5rem 0;
+    background-color: $pure-white;
+    
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        img{
+            width: 4.5rem;
+            height: auto;
+            margin-right: 10rem;
+
+            @include responsive(phone-576){
+            width: 4rem;
+            &:not(:last-child){
+                margin-right: 5rem;
+            }
+            &:last-child{margin-right: 0;}
+            }
+
+            @include responsive(phone-310){
+                width: 3rem;
+
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+                }
+        }
+    }
+}
+
+.section-why{
+ padding: 10rem 0 10rem 0; 
+
+ ul{
+     list-style-type: none;
+ }
+  
+ i{
+     color: $blue;
+     margin-right: 1rem;
+     margin-top: .5rem;
+ }
+ 
+  
+    .why-img{
+        display: flex;
+        img{
+            max-width: 90%;
+            width: 90%;
+            height: auto;
+
+            @include responsive(tab-700){
+                width: 65%;
+                margin: 0 auto;
+            }
+
+        }
+    }
+}
+
+.section-about{
+ padding: 10rem 0 10rem 0;
+  background-color: $light;
+ 
+
+    .right{
+        text-align: center;
+        line-height: 1.9;
+    }
+
+    .left{
+       
+        
+        h1{
+            padding-top: 2rem;
+            font-size: 4rem;
+
+            &::before{
+                content: " ";
+                display: block;
+                width: 4rem;
+                border: 2px solid $secondary-color;
+            }
+        }
+    }
+
+    @include responsive(phone-548){
+        .left{
+            display: none;
+        }
+    }
+}
+
+
+.methodology {
+ padding: 10rem 0;
+    background-color: $pure-white;
+  
+    @include responsive(tab-900){
+        padding: 10rem 0;
+    }
+}
+
+.portfolio{
+    background-color: $pure-white;
+ padding: 10rem 0 10rem 0;
+}
+
+
+.section-testimonial{
+    padding: 10rem 0 10rem 0;
+    background-color: $light;/* #00127A; *//* rgb(70, 69, 88); */
+   
+
+    .testimonial{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+
+        &__img{
+            border-radius: 50%;
+            justify-self: center;
+        }
+
+        @include responsive(tab-768){
+           & img{
+               width: 80%;
+           }
+        }
+        @include responsive(tab-650){
+            grid-template-columns: 1fr;
+            & img{
+                width: 30%;
+                margin: 0 auto;
+            }
+        }
+
+        @include responsive(phone-375){
+            & img{
+            width: 55%;
+            }
+        }
+    }
+
+    .testifier__message{
+        margin-top: 4rem;
+    }
+}
+
+.section-cta{
+ padding: 5rem 0 5rem 0;
+    background-color:$primary-color-dark;
+    color: $pure-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-blog{
+ padding: 10rem 0 10rem 0;
+    background-color: $pure-white;   
+}

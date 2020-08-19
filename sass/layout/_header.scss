@@ -1,0 +1,107 @@
+
+header{
+    background: url('../img/header1-1400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: $secondary-color;
+    justify-content: space-between;
+    padding: 0 8rem;
+    position: relative;
+
+    
+    @include responsive(pc-180){
+        background: url('../img/header1.jpg');
+        padding: 0 15rem;
+    }
+    @include responsive(tab-900){
+        background: url('../img/header1-1000.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .right{
+            display: none;
+        }
+    }
+
+    @include responsive(phone-460){
+        background: url('../img/header1-500.jpg');
+        padding: 0 4rem;
+    }
+}
+
+.header__content{
+    color: $light;
+
+    &--heading{
+        font-size: 5rem;
+        color: $light;
+ 
+        @include responsive (phone-310){
+            font-size: 3.5rem;
+            }
+    }
+
+    &--small{
+        font-size: 2rem;
+        color: $light;
+    }
+
+    &--position{
+        padding-bottom: 2rem;
+        font-size: 2rem;
+        color: $tertiary-color;
+    }
+
+    p{
+        margin-bottom: 5rem;
+        @include responsive (phone-330){
+            display: none;
+        }
+    }
+}
+
+.c-t-a__btn{
+    margin: 3rem 0;
+     svg{color: $secondary-color;}
+     @include responsive (phone-390){
+        & :last-child{
+            display: none;
+        }
+      
+    }
+}
+
+.quick_link{
+    color: $light;
+    padding-right: 1rem;
+}
+
+
+.right img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.slideshow-overlay{
+    background-color: rgba(47, 23, 64, .86);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    @include responsive(pc-180){
+        background-color: rgba(47, 23, 64, .5);   
+    }
+}
+
+.slideshow, .right{
+    z-index: 3;;
+}

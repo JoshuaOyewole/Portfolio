@@ -1,0 +1,8 @@
+.flex{
+    display: flex;
+
+    & svg{
+        color: $primary-color;
+        margin: 1rem 1rem 0 0;
+    }
+}

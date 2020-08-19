@@ -1,0 +1,72 @@
+
+/* 
+MEDIA QUERY MANAGER
+0 - 600px - Phone
+600-900px: - Tablet potrait
+900-1200px: - Tablet Landscape
+1200 - 1800px: Desktop first version already written(default)
+>= 1800px: Big Desktop screens
+
+
+1em = 16px
+*/
+
+@mixin responsive($breakpoint){
+    @if $breakpoint == 'pc-180' {
+        @media (min-width: 112.5em) {@content}; //1800px = 112.5em(1800/16 *100)
+    }
+
+    @if $breakpoint == 'pc-1200' {
+        @media (max-width: 75em) {@content}; //1200px = 755em(1200/16 *100)
+    }
+    @if $breakpoint == 'tab-1000' {
+        @media (max-width: 62.5em) {@content}; //1000px = 62.5em(1000/16 *100)
+    }
+
+    @if $breakpoint == 'tab-900' {
+        @media (max-width: 56.25em) {@content}; //900px = 56.25em(900/16 *100)
+    }
+
+    @if $breakpoint == 'tab-810' {
+        @media (max-width: 50.63em) {@content}; //810px = 50.625em(810/16 *100)
+    }
+
+    @if $breakpoint == 'tab-768' {
+        @media (max-width: 48em) {@content}; //768px = 48em(700/16 *100)
+    }
+
+    @if $breakpoint == 'tab-700' {
+        @media (max-width: 43.75em) {@content}; //700px = 43.75em(700/16 *100)
+    }
+
+    @if $breakpoint == 'tab-680' {
+        @media (max-width: 42.5em) {@content}; //680px = 43.75em(680/16 *100)
+    }
+
+    @if $breakpoint == 'tab-650' {
+        @media (max-width: 40.63em) {@content}; //650px = 40.63em(650/16 *100)
+    }
+
+    @if $breakpoint == 'phone-576' {
+        @media (max-width: 36em) {@content}; //576px = 36em(576/16 *100)
+    }
+
+    @if $breakpoint == 'phone-548' {
+        @media (max-width: 34.25em) {@content}; //548px = 34.25em(375/16 *100)
+    }
+    @if $breakpoint == 'phone-460' {
+        @media (max-width: 28.75em) {@content}; //460px = 28.75em(460/16 *100)
+    }
+    @if $breakpoint == 'phone-390' {
+        @media (max-width: 24.38em) {@content}; //390px = 24.38em(390/16 *100)
+    }
+    @if $breakpoint == 'phone-375' {
+        @media (max-width: 23.44em) {@content}; //375px = 23.44em(375/16 *100)
+    }
+    @if $breakpoint == 'phone-330' {
+        @media (max-width: 20.75em) {@content}; //330px = 23.44em(330/16 *100)
+    }
+    @if $breakpoint == 'phone-310' {
+        @media (max-width: 19.38em) {@content}; //310px = 23.44em(310/16 *100)
+    }
+}

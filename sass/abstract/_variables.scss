@@ -1,0 +1,32 @@
+
+$primary-color: #3C234D;
+$primary-color-dark: rgb(44,29,77);
+$secondary-color: #020202ff;
+$tertiary-color: #ffad05ff;
+$red: #d72638;
+$dark-red: #9A031E;
+$light : rgb(250, 245, 240);
+$pure-white : #fff;
+$blue :#282838;
+
+
+ //CONTAINER
+$container-width: 120rem;
+$container-l-r-padding: 10rem;
+$container-small-l-r-padding: 4rem;
+
+$container-width-phone-548: 54.8rem;
+$container-phone-548-l-r-padding: 6rem;
+
+
+/* 
+UNUSED
+ $primary-color: #675fe3ff; 
+ $primary-color: #0074f0; or hsl(211, 100%, 47%);
+background: linear-gradient(125deg, hsla(211, 100%, 47%, 1) 0%, rgb(41, 42, 46) 100%); 
+
+background: linear-gradient(135deg, hsla(174, 100%, 29%, 1) 0%, hsla(225, 5%, 17%, 1) 100%); 
+  background-color: #675FE3;  // #2153CC; 
+background: linear-gradient(125deg, hsla(211, 100%, 47%, 1) 0%, rgb(41, 42, 46) 100%);  
+background-color: $primary-color;
+*/

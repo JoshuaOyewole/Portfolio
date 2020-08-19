@@ -1,0 +1,19 @@
+footer{
+    background-color: $primary-color-dark;
+    padding: 5rem 10rem;
+    color: $light;
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive(tab-700){
+        padding: 5rem;
+    }
+    @include responsive(tab-680){
+        flex-direction: column;
+        text-align: center;
+    }
+    @include responsive(phone-375){
+        padding: 3rem .5rem;
+    }
+   
+}

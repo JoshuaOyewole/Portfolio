@@ -1,0 +1,61 @@
+.btn{
+    padding: 1.5rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: all 1s ease-in;
+
+    &__primary{
+        background-color: $primary-color;
+        color: $light;
+   
+        &:hover{
+            background-color: darken($color: $primary-color, $amount: 40);
+            border: none;
+            color: $light;
+        }
+    }
+
+    &__light{
+        background-color: $light;
+        color: $secondary-color;
+   
+        &:hover{
+            background-color: darken($color: $pure-white, $amount: 15);
+            border: none;
+            color: $secondary-color;
+        }
+    }
+
+   /*  &_secondary{
+
+    } */
+
+    &__transperant{
+       border: 1px solid $light;
+        color: $tertiary-color;
+   
+        &:hover{
+            background-color: $tertiary-color;
+            border: none;
+            color: $secondary-color;
+        }
+    }
+
+    &__tertiary{
+        background-color: $tertiary-color;
+        color: $secondary-color;
+
+        &:hover{
+            background-color: lighten($color: $tertiary-color, $amount: 15);
+            border: none;
+            color: $secondary-color;
+        }
+    }
+
+    &__view{
+        color: #fff;
+        border-radius: 0;
+        background-color: #2F2E41;
+        padding: 1rem .5rem;;
+    }
+}
