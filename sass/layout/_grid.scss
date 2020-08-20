@@ -29,13 +29,9 @@
     grid-gap: 5rem 3rem;
 
      @include responsive(tab-768){
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-gap: 3rem 4rem;
     } 
-
-    @include responsive(phone-460){
-        grid-template-columns: 1fr;
-    }
 }
 
 .grid-4-1-1{

@@ -5,6 +5,5 @@ document.getElementById('date').innerText = new Date().getFullYear();
 const toggleBtn = document.getElementById('hidden');
 const nav =  document.querySelector('.list-group');
 toggleBtn.addEventListener('click', ()=>{
-    nav.classList.toggle('block');
     nav.classList.toggle('show');
 });
