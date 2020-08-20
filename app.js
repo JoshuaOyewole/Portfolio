@@ -1,5 +1,5 @@
 //DYNAMIC FOOTER YEAR
-//document.getElementById('date').innerText = new Date().getFullYear();
+document.getElementById('date').innerText = new Date().getFullYear();
 
 //RESPONSIVE MENU
 const toggleBtn = document.getElementById('hidden');
